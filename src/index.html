@@ -10,13 +10,6 @@
   <body>
     @@include('parts/header.html')
 
-    <script id="__bs_script__">
-      document.write(
-        "<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.7'><\/script>".replace(
-          "HOST",
-          location.hostname
-        )
-      );
-    </script>
+    <script defer src="index.js" type="module"></script>
   </body>
 </html>
