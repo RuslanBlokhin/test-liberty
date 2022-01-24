@@ -1,4 +1,9 @@
-$red: red;
-h1 {
-  color: $red;
-}
+@import "./global/global";
+@import "./global/fonts";
+@import "./global/variables";
+
+@import "./base/container";
+
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";

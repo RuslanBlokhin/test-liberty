@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp serve",
+    "build": "gulp build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Blokhim Ruslan",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.12",
@@ -21,8 +22,10 @@
     "gulp-csso": "^4.0.1",
     "gulp-file-include": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-newer": "^1.4.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
+    "gulp-webp": "^4.0.1",
     "sass": "^1.49.0"
   }
 }

@@ -8,7 +8,10 @@
     <title>Test</title>
   </head>
   <body>
-    @@include('parts/header.html')
+    <div class="container">
+      @@include('parts/header.html') @@include('parts/main.html')
+      @@include('parts/footer.html')
+    </div>
 
     <script defer src="index.js" type="module"></script>
   </body>
