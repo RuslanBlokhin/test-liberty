@@ -1,0 +1,73 @@
+<main class="main">
+  <button type="button">
+    <div class="main__back">
+      <img src="./images/left.svg" alt="arrow" />
+      <p class="main__back-text">Назад</p>
+    </div>
+  </button>
+  <p class="main__title">СПЕЦОДЕЖДА ЗИМНЯЯ</p>
+  <div class="main___buttons">
+    <button type="button" class="button_filter">
+      Спецодежда с заключением Минпромторга
+    </button>
+    <button type="button" class="button_filter">Костюмы женские</button>
+    <button type="button" class="button_filter">Костюмы мужские</button>
+    <button type="button" class="button_filter border_red">Показать еще</button>
+  </div>
+  <div class="main___sorting-filter">
+    <button type="button">
+      <div class="main___sorting">
+        <p class="sorting__title">По возрастанию цены</p>
+        <img src="./images/down.svg" alt="arrow-bottom" />
+      </div>
+    </button>
+    <button type="button">
+      <div class="main___filter">
+        <img src="./images/filter.svg" alt="filter" />
+        <p class="filter__text">Фильтр</p>
+      </div>
+    </button>
+  </div>
+  <div class="main__content">
+    <div class="content__gallery">
+      <div class="content__gallery__item">
+        <img
+          src="./images/man1.png"
+          alt="man"
+          class="content__gallery__image"
+        />
+        @@include('content.html')
+      </div>
+      <div class="content__gallery__item">
+        <img
+          src="./images/man2.png"
+          alt="man"
+          class="content__gallery__image"
+        />
+        @@include('content.html')
+      </div>
+      <div class="content__gallery__item">
+        <img
+          src="./images/man3.png"
+          alt="man"
+          class="content__gallery__image"
+        />
+        @@include('content.html')
+      </div>
+    </div>
+  </div>
+  <button type="button" class="button__showmore">Показать ещё</button>
+  <div class="content__gallery__pagination">
+    <button type="button">
+      <img src="./images/left.svg" alt="left" />
+    </button>
+    <button type="button" class="button__number is-active">1</button>
+    <button type="button" class="button__number">2</button>
+    <button type="button" class="button__number">3</button>
+    <button type="button" class="button__number" disabled>4</button>
+    <button type="button" class="button__number red">Все</button>
+    <button type="button">
+      <img src="./images/right.svg" alt="left" />
+    </button>
+  </div>
+</main>
