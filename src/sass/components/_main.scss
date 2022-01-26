@@ -127,7 +127,6 @@
 
   .content__gallery__button {
     display: flex;
-    // align-items: center;
     margin-top: 30px;
   }
 
@@ -158,7 +157,7 @@
   .content__gallery__pagination {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 30px;
   }
 
@@ -166,16 +165,27 @@
     width: 24px;
     height: 24px;
     border-radius: 2px;
-    &:hover,
-    &:focus,
-    & .is-active {
+    &:hover {
       background-color: #e93c3c;
       color: #fff;
     }
   }
 
-  .button__number .is-active {
+  .red-text {
+    width: 28px;
+    color: #e93c3c;
+  }
+
+  .grey-text {
+    color: #a0a4a8;
+  }
+
+  .is-active {
     background-color: #e93c3c;
     color: #fff;
+  }
+
+  .button__arrow {
+    height: 24px;
   }
 }
