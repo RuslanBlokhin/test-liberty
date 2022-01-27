@@ -1,29 +1,39 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.377);
+  transition: all 250ms linear;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
 .filter {
   width: 268px;
+  height: 100vh;
   padding: 0 18px 32px;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   bottom: 0;
   background-color: #fff;
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 2;
+  //   z-index: 50;
   //   opacity: 0;
   //   visibility: hidden;
   //   pointer-events: none;
 }
-// .modal.is-open {
-//   opacity: 1;
-//   overflow-y: auto;
-//   overflow-x: hidden;
-//   visibility: visible;
-//   pointer-events: auto;
-// }
 
 .button__close {
-  position: absolute;
+  position: fixed;
   left: 268px;
   width: 52px;
   height: 50px;
@@ -40,8 +50,12 @@
 .filter__back__text {
   margin-left: 10px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 26px;
+}
+
+.filter__price {
+  margin-bottom: 42px;
 }
 
 .filter__price__title {
@@ -52,15 +66,15 @@
 }
 
 .filter__price__title__text {
-  font-weight: 500;
-  line-height: 21px;
+  font-weight: 600;
+  line-height: 20.8px;
 }
 
 .filter__price__inputs {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .filter__price__inputs__item {
@@ -89,4 +103,103 @@
   line-height: 14px;
   top: 8px;
   left: 10px;
+}
+
+.filter__producttype {
+  border-top: 1px solid #e8e8e8;
+  padding-top: 13px;
+  padding-bottom: 16px;
+}
+
+.filter__producttype__text {
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.filter__producttype__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.filter__producttype__checkbox {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.filter__producttype__checkbox__item {
+  &[type="checkbox"] {
+    display: none;
+  }
+}
+
+.filter__producttype__checkbox__text {
+  font-family: Arial;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  color: #52575c;
+  margin-bottom: 14px;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+  &::before {
+    content: " ";
+    color: #fff;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 20px;
+    height: 21px;
+    background: #fff;
+    border: 1px solid #cacccf;
+    border-radius: 2px;
+    border-image: initial;
+    vertical-align: middle;
+  }
+}
+
+.filter__producttype__checkbox__text:hover {
+  color: $red;
+  cursor: pointer;
+}
+
+.filter__producttype__checkbox__item:checked
+  + .filter__producttype__checkbox__text:before {
+  background: $red;
+  content: "✔";
+}
+
+.filter__producttype__checkbox__item:disabled
+  + .filter__producttype__checkbox__text:before {
+  border-color: #e8e8e8;
+}
+
+.filter__producttype__checkbox__item:disabled
+  + .filter__producttype__checkbox__text {
+  color: #a0a4a8;
+}
+
+.filter__showbutton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 17px 51px;
+  width: 216px;
+  //   height: 50px;
+  border: 2px solid $red;
+  border-radius: 2px;
+  color: $red;
+}
+
+.filter__resetbutton {
+  padding-right: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  color: $red;
 }

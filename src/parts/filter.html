@@ -1,39 +1,166 @@
-<div class="filter">
-  <button class="button__close">
-    <img src="./images/x.svg" alt="close" />
-  </button>
-  <div class="filter__back">
-    <button type="button" class="filter__back__button">
-      <img src="./images/left.svg" alt="left" />
+<div class="backdrop is-hidden">
+  <div class="filter">
+    <button class="button__close">
+      <img src="./images/x.svg" alt="close" />
     </button>
-    <p class="filter__back__text">Фильтр</p>
-  </div>
-  <div class="filter__price">
-    <div class="filter__price__title">
-      <div class="filter__price__title__text">Цена, руб</div>
-      <img src="./images/top.svg" alt="up" />
+    <div class="filter__back">
+      <button type="button" class="filter__back__button">
+        <img src="./images/left.svg" alt="left" />
+      </button>
+      <p class="filter__back__text">Фильтр</p>
     </div>
-    <div class="filter__price__inputs">
-      <div class="filter__price__inputs__wrapper">
-        <span class="filter__price__inputs__span">от</span>
-        <input
-          type="number"
-          placeholder="86"
-          class="filter__price__inputs__item start rangeValues"
-        />
+    <div class="filter__price">
+      <div class="filter__price__title">
+        <p class="filter__price__title__text">Цена, руб</p>
+        <img src="./images/top.svg" alt="up" />
       </div>
-      <div class="filter__price__inputs__wrapper">
-        <span class="filter__price__inputs__span">до</span>
-        <input
-          type="number"
-          placeholder="100000"
-          class="filter__price__inputs__item end rangeValues"
-        />
+      <div class="filter__price__inputs">
+        <div class="filter__price__inputs__wrapper">
+          <span class="filter__price__inputs__span">от</span>
+          <input
+            type="number"
+            placeholder="86"
+            class="filter__price__inputs__item start rangeValues"
+          />
+        </div>
+        <div class="filter__price__inputs__wrapper">
+          <span class="filter__price__inputs__span">до</span>
+          <input
+            type="number"
+            placeholder="100000"
+            class="filter__price__inputs__item end rangeValues"
+          />
+        </div>
+      </div>
+      <div class="range-slider">
+        <input type="range" min="86" max="100000" value="86" />
+        <input type="range" min="86" max="100000" value="100000" />
       </div>
     </div>
-    <div class="range-slider">
-      <input type="range" min="86" max="100000" value="86" />
-      <input type="range" min="86" max="100000" value="100000" />
+    <hr class="footer__line" />
+    <div class="filter__producttype">
+      <div class="filter__producttype__title">
+        <p class="filter__producttype__text">Вид изделия</p>
+        <img src="./images/top.svg" alt="up" />
+      </div>
+      <div>
+        <label class="filter__producttype__checkbox">
+          <input
+            type="checkbox"
+            checked
+            class="filter__producttype__checkbox__item"
+          />
+          <p class="filter__producttype__checkbox__text">Брюки</p>
+        </label>
+        <label class="filter__producttype__checkbox">
+          <input
+            type="checkbox"
+            disabled
+            class="filter__producttype__checkbox__item"
+          />
+          <p class="filter__producttype__checkbox__text">Жилет</p>
+        </label>
+        @@include('checkbox.html',{ "name": "Костюм"})
+        @@include('checkbox.html',{"name": "Куртка"})
+        @@include('checkbox.html',{ "name": "Полукомбинезон"})
+      </div>
     </div>
+    <hr class="footer__line" />
+    <div class="filter__producttype">
+      <div class="filter__producttype__title">
+        <p class="filter__producttype__text">Сезон</p>
+        <img src="./images/top.svg" alt="up" />
+      </div>
+      <div>@@include('checkbox.html',{ "name": "Зима"})</div>
+    </div>
+    <div class="filter__producttype">
+      <div class="filter__producttype__title">
+        <p class="filter__producttype__text">Торговая марка / Бренд</p>
+        <img src="./images/top.svg" alt="up" />
+      </div>
+      <div>@@include('checkbox.html',{ "name": "СИРИУС"})</div>
+    </div>
+    <div class="filter__producttype">
+      <div class="filter__producttype__title">
+        <p class="filter__producttype__text">Пол</p>
+        <img src="./images/top.svg" alt="up" />
+      </div>
+      <div>
+        @@include('checkbox.html',{ "name": "Женский"})
+        @@include('checkbox.html',{ "name": "Мужской"})
+        @@include('checkbox.html',{ "name": "Универсальный"})
+      </div>
+    </div>
+    <div class="filter__producttype">
+      <div class="filter__producttype__title">
+        <p class="filter__producttype__text">Состав</p>
+        <img src="./images/top.svg" alt="up" />
+      </div>
+      <div>
+        @@include('checkbox.html',{ "name": "Брюки"})
+        @@include('checkbox.html',{ "name": "Жилет"})
+        @@include('checkbox.html',{ "name": "Костюм"})
+        @@include('checkbox.html',{"name": "Куртка"})
+        @@include('checkbox.html',{ "name": "Полукомбинезон"})
+        @@include('checkbox.html',{ "name": "Полукомбинезон"})
+      </div>
+    </div>
+    <div class="filter__producttype">
+      <div class="filter__producttype__title">
+        <p class="filter__producttype__text">Ткань/Материал верха</p>
+        <img src="./images/top.svg" alt="up" />
+      </div>
+      <div>
+        @@include('checkbox.html',{ "name": "Брюки"})
+        @@include('checkbox.html',{ "name": "Жилет"})
+        @@include('checkbox.html',{ "name": "Костюм"})
+        @@include('checkbox.html',{"name": "Куртка"})
+        @@include('checkbox.html',{ "name": "Полукомбинезон"})
+      </div>
+    </div>
+    <div class="filter__producttype">
+      <div class="filter__producttype__title">
+        <p class="filter__producttype__text">Утеплитель</p>
+        <img src="./images/top.svg" alt="up" />
+      </div>
+      <div>
+        @@include('checkbox.html',{ "name": "Брюки"})
+        @@include('checkbox.html',{ "name": "Жилет"})
+        @@include('checkbox.html',{ "name": "Костюм"})
+        @@include('checkbox.html',{"name": "Куртка"})
+        @@include('checkbox.html',{ "name": "Полукомбинезон"})
+      </div>
+    </div>
+    <div class="filter__producttype">
+      <div class="filter__producttype__title">
+        <p class="filter__producttype__text">Назначение</p>
+        <img src="./images/top.svg" alt="up" />
+      </div>
+      <div>
+        @@include('checkbox.html',{ "name": "Брюки"})
+        @@include('checkbox.html',{ "name": "Жилет"})
+        @@include('checkbox.html',{ "name": "Костюм"})
+      </div>
+    </div>
+    <div class="filter__producttype">
+      <div class="filter__producttype__title">
+        <p class="filter__producttype__text">Цвет</p>
+        <img src="./images/top.svg" alt="up" />
+      </div>
+      <div>
+        @@include('checkbox.html',{ "name": "Бирюзовый"})
+        @@include('checkbox.html',{ "name": "Васильковый"})
+        @@include('checkbox.html',{ "name": "Красный"})
+        @@include('checkbox.html',{ "name": "Лимонный"})
+        @@include('checkbox.html',{ "name": "Олива"})
+        @@include('checkbox.html',{ "name": "Оранжевый"})
+        @@include('checkbox.html',{ "name": "Серый"})
+        @@include('checkbox.html',{ "name": "Синий"})
+        @@include('checkbox.html',{ "name": "Черный, Красный"})
+        @@include('checkbox.html',{ "name": "Черный"})
+      </div>
+    </div>
+    <button type="button" class="filter__showbutton">Показать(123)</button>
+    <button type="button" class="filter__resetbutton">Сбросить</button>
   </div>
 </div>

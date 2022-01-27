@@ -17,6 +17,7 @@ function html() {
     .pipe(
       include({
         prefix: "@@",
+        basepath: "@file",
       })
     )
     .pipe(

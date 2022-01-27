@@ -1,3 +1,17 @@
+const buttonOpen = document.querySelector(".main___filter__button");
+const buttonClose = document.querySelector(".button__close");
+const filterbackButton = document.querySelector(".filter__back__button");
+const backdrop = document.querySelector(".backdrop");
+
+buttonOpen.addEventListener("click", toggleBackdrop);
+buttonClose.addEventListener("click", toggleBackdrop);
+filterbackButton.addEventListener("click", toggleBackdrop);
+
+function toggleBackdrop() {
+  backdrop.classList.toggle("is-hidden");
+}
+
+//===========Slider==============
 function getVals() {
   const sliderStart = document.querySelector(".start");
   const sliderEnd = document.querySelector(".end");
