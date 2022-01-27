@@ -1,0 +1,60 @@
+@mixin range-slider(
+  $width,
+  $height,
+  $input-top,
+  $input-bg-color,
+  $input-thumb-color,
+  $float: none,
+  $input-height: 4px
+) {
+  position: relative;
+  width: $width;
+  float: $float;
+  text-align: center;
+  bottom: 51px;
+
+  input[type="range"] {
+    pointer-events: none;
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: $input-bg-color;
+    left: 0;
+    top: $input-top;
+    width: $width;
+    outline: none;
+    height: $input-height;
+    margin: 0;
+    padding: 0;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 11;
+    outline: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid $input-thumb-color;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid $input-thumb-color;
+    background: #fff;
+    cursor: pointer;
+  }
+}
+
+div.range-slider {
+  @include range-slider(100%, 300px, 50px, #cacccf, #ff6262, left);
+}

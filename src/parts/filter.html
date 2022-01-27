@@ -1,0 +1,39 @@
+<div class="filter">
+  <button class="button__close">
+    <img src="./images/x.svg" alt="close" />
+  </button>
+  <div class="filter__back">
+    <button type="button" class="filter__back__button">
+      <img src="./images/left.svg" alt="left" />
+    </button>
+    <p class="filter__back__text">Фильтр</p>
+  </div>
+  <div class="filter__price">
+    <div class="filter__price__title">
+      <div class="filter__price__title__text">Цена, руб</div>
+      <img src="./images/top.svg" alt="up" />
+    </div>
+    <div class="filter__price__inputs">
+      <div class="filter__price__inputs__wrapper">
+        <span class="filter__price__inputs__span">от</span>
+        <input
+          type="number"
+          placeholder="86"
+          class="filter__price__inputs__item start rangeValues"
+        />
+      </div>
+      <div class="filter__price__inputs__wrapper">
+        <span class="filter__price__inputs__span">до</span>
+        <input
+          type="number"
+          placeholder="100000"
+          class="filter__price__inputs__item end rangeValues"
+        />
+      </div>
+    </div>
+    <div class="range-slider">
+      <input type="range" min="86" max="100000" value="86" />
+      <input type="range" min="86" max="100000" value="100000" />
+    </div>
+  </div>
+</div>

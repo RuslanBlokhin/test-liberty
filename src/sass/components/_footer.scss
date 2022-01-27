@@ -1,144 +1,145 @@
-@media (max-width: 1280px) {
-  .footer {
-    background-color: #f9f9fa;
-  }
+.footer {
+  background-color: #f9f9fa;
+}
 
-  .footer__list {
-    padding: 40px 10px 20px;
-    border-top: 1px solid #e8e8e8;
-    border-bottom: 1px solid #e8e8e8;
-  }
+.footer__list {
+  padding: 40px 10px 20px;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
 
-  .footer__list__item {
-    color: #a0a4a8;
-    font-weight: 500;
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
-  .red {
-    color: #e93c3c;
-  }
-
-  .footer__contacts {
-    padding: 20px 10px;
-  }
-
-  .footer__links {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer__phone {
-    margin-bottom: 6px;
-    color: #52575c;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 26px;
-  }
-
-  .footer__call {
-    margin-bottom: 21px;
-    color: #eb4747;
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .footer__mail {
-    margin-bottom: 20px;
-    color: #52575c;
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  .footer__soсial {
-    margin-bottom: 29px;
-  }
-
-  .footer__social__icons:not(:last-child) {
-    margin-right: 14px;
-  }
-
-  .footer__pricelist {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-
-  .footer__pricelist__exel {
-    margin-right: 10px;
-  }
-
-  .footer__pricelist__link {
-    color: #eb4747;
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .footer__text {
-    margin-bottom: 30px;
-    color: #52575c;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 500;
-  }
-
-  .footer__input {
-    width: 300px;
-    line-height: 16px;
-    padding: 12px 0 12px 20px;
-    border: 1px solid #e8e8e8;
-    border-radius: 4px;
-    &::placeholder {
-      color: #a0a4a8;
-    }
-  }
-
-  .footer__subscribe {
-    display: flex;
-    align-items: center;
-    position: relative;
+.footer__list__item {
+  color: #a0a4a8;
+  font-weight: 500;
+  &:not(:last-child) {
     margin-bottom: 20px;
   }
+}
+.red {
+  color: #e93c3c;
+}
 
-  .footet__send-icon {
-    position: absolute;
-    left: 254px;
-  }
+.footer__contacts {
+  padding: 20px 10px;
+}
 
-  .footer__checkbox {
-    display: flex;
-  }
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
 
-  .footer__checkbox__icon {
-    margin: 0;
-    margin-right: 12px;
-  }
+.footer__phone {
+  margin-bottom: 6px;
+  color: #52575c;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
 
-  .footer__checkbox__text {
-    font-size: 12px;
-    line-height: 15.6px;
+.footer__call {
+  margin-bottom: 21px;
+  color: #eb4747;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer__mail {
+  margin-bottom: 20px;
+  color: #52575c;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer__soсial {
+  margin-bottom: 29px;
+}
+
+.footer__social__icons:not(:last-child) {
+  margin-right: 14px;
+}
+
+.footer__pricelist {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer__pricelist__exel {
+  margin-right: 10px;
+}
+
+.footer__pricelist__link {
+  color: #eb4747;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer__text {
+  margin-bottom: 30px;
+  color: #52575c;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.footer__input {
+  width: 300px;
+  line-height: 16px;
+  padding: 12px 0 12px 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  &::placeholder {
     color: #a0a4a8;
   }
+}
 
-  .footer__info {
-    border-top: 1px solid #e8e8e8;
-    padding: 20px 0;
-  }
+.footer__subscribe {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
 
-  .footer__info__year {
-    font-size: 14px;
-    line-height: 18.2px;
-    margin-left: 10px;
-    margin-bottom: 8px;
-    color: #000;
-  }
+.footet__send-icon {
+  position: absolute;
+  left: 254px;
+}
 
-  .footer__info__text {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18.2px;
-    color: #52575c;
-    margin: 0 10px;
-  }
+.footer__checkbox {
+  display: flex;
+}
+
+.footer__checkbox__icon {
+  margin: 0;
+  margin-right: 12px;
+}
+
+.footer__checkbox__text {
+  font-size: 12px;
+  line-height: 15.6px;
+  color: #a0a4a8;
+}
+
+.footer__info {
+  border-top: 1px solid #e8e8e8;
+  padding: 20px 0;
+}
+
+.footer__info__year {
+  font-size: 14px;
+  line-height: 18.2px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.footer__info__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18.2px;
+  color: #52575c;
+  margin: 0 10px;
+}
+
+@media (min-width: 768px) {
 }
