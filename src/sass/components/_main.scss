@@ -40,6 +40,10 @@
   }
 }
 
+.button_filter_1280 {
+  display: none;
+}
+
 .border_red {
   border-color: $red;
 }
@@ -203,5 +207,15 @@
 @media (min-width: 768px) {
   .main {
     padding: 20px 34px 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main {
+    padding: 40px 0 200px;
+  }
+
+  .button_filter_1280 {
+    display: inline-block;
   }
 }

@@ -1,21 +1,93 @@
 <header class="header">
-  <button type="button" class="button">
-    <div class="header__burger-menu">
-      <img src="./images/burger-menu.svg" alt="burger-menu" />
+  <div class="header__contacts">
+    <img src="./images/logo-large.svg" alt="logo" />
+    <div class="header__contacts__city">
+      <p class="header__contacts__city__text">Выберите ваш город</p>
+      <div class="header__contacts__city__wrapper">
+        <img src="./images/mappin.svg" alt="mappin" />
+        <a href="#" class="header__contacts__city__wrapper__link">
+          Санкт-Петербург
+        </a>
+      </div>
     </div>
-  </button>
-  <div class="header__logo">
-    <img src="./images/logo.svg" alt="logo" />
+    <div class="header__contacts__input">
+      <input
+        type="text"
+        placeholder="Поиск"
+        class="header__contacts__input__item"
+      />
+      <img
+        src="./images/search.svg"
+        alt="search"
+        class="header__contacts__input__icon"
+      />
+    </div>
+    <div class="header__contacts__workingmode">
+      <p class="header__contacts__workingmode__text">Рижим работы</p>
+      <p class="header__contacts__workingmode__text">Пн-Пт с 8:00 — 18:00</p>
+    </div>
+    <div class="header__contacts__icons">
+      <img
+        src="./images/facebook.svg"
+        alt="facebook"
+        class="header__contacts__icons__item"
+      />
+      <img
+        src="./images/instagram.svg"
+        alt="instagram"
+        class="header__contacts__icons__item"
+      />
+      <img
+        src="./images/vk.svg"
+        alt="vkontalte"
+        class="header__contacts__icons__item"
+      />
+    </div>
+    <div class="header__contacts__call">
+      <p class="header__contacts__call__city">г. Москва</p>
+      <p class="header__contacts__call__number">+7 (495) 777-2345</p>
+      <a href="#" class="header__contacts__call__link">Заказать звонок</a>
+    </div>
+    <div class="header__contacts__call">
+      <p class="header__contacts__call__city">г. Ногинск</p>
+      <p class="header__contacts__call__number">+7 (495) 600-4400</p>
+      <a href="#" class="header__contacts__call__link">Заказать звонок</a>
+    </div>
   </div>
-  <div class="header__icons">
-    <div class="header__icons-item">
-      <img src="./images/favourite.svg" alt="favourite" />
-    </div>
-    <div class="header__icons-item">
-      <img src="./images/shop.svg" alt="shop" />
-    </div>
-    <div class="header__icons-item">
-      <img src="./images/man.svg" alt="man" />
+  <div class="header__navigation__wrapper">
+    <div class="header__navigation">
+      <button type="button" class="button">
+        <div class="header__burger-menu">
+          <img src="./images/burger-menu.svg" alt="burger-menu" />
+          <p class="header__burger-menu__text">Каталог</p>
+        </div>
+      </button>
+      <div class="header__logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <nav class="header__navigation__list">
+        <a href="#" class="header__navigation__list__item">Новости</a>
+        <a href="#" class="header__navigation__list__item">О компании</a>
+        <a href="#" class="header__navigation__list__item">Скидки</a>
+        <a href="#" class="header__navigation__list__item">Доставка и оплата</a>
+        <a href="#" class="header__navigation__list__item">Услуги</a>
+        <a href="#" class="header__navigation__list__item">Дилеры</a>
+        <a href="#" class="header__navigation__list__item">Магазины</a>
+        <a href="#" class="header__navigation__list__item">Контакты</a>
+        <a href="#" class="header__navigation__list__item">ЧЕСТНЫЙ ЗНАК</a>
+      </nav>
+      <div class="header__icons">
+        <div class="header__icons-item">
+          <img src="./images/favourite.svg" alt="favourite" />
+        </div>
+        <div class="header__icons-item">
+          <img src="./images/shop.svg" alt="shop" />
+        </div>
+        <div class="header__icons-item">
+          <img src="./images/man.svg" alt="man" />
+          <p class="header__icons-item__text">Войти</p>
+        </div>
+      </div>
     </div>
   </div>
 </header>
