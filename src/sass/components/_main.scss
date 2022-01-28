@@ -254,7 +254,7 @@
   }
 
   .main__content {
-    width: 100%;
+    width: 1024px;
   }
 
   .filter__wrapper {
@@ -280,5 +280,35 @@
   .content__gallery__item {
     width: 256px;
     height: 703px;
+  }
+
+  .content__gallery__image {
+    width: 216px;
+    height: 438px;
+  }
+
+  .button__buy {
+    border: 1px solid #a0a4a8;
+    background: #fff;
+    color: #52575c;
+    border-radius: 2px;
+    &:hover {
+      background: $red;
+      color: #fff;
+    }
+  }
+
+  .content__gallery__button__iconwhite {
+    display: none;
+  }
+
+  .button__heart:hover {
+    background: $red;
+    & .content__gallery__button__icon {
+      display: none;
+    }
+    & .content__gallery__button__iconwhite {
+      display: inline-block;
+    }
   }
 }
