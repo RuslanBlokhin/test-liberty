@@ -6,10 +6,13 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.377);
   transition: all 250ms linear;
-  &.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 }
 
@@ -26,10 +29,6 @@
   bottom: 0;
   background-color: #fff;
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  //   z-index: 50;
-  //   opacity: 0;
-  //   visibility: hidden;
-  //   pointer-events: none;
 }
 
 .button__close {
@@ -202,4 +201,53 @@
   font-size: 16px;
   line-height: 16px;
   color: $red;
+}
+
+@media (min-width: 1280px) {
+  .backdrop {
+    display: block;
+    position: static;
+    width: 256px;
+    height: 2420px;
+    background-color: transparent;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .filter {
+    width: 256px;
+    height: 2420px;
+    padding: 33px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f9f9fa;
+    // transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .button__close {
+    display: none;
+  }
+
+  .filter__back {
+    display: none;
+  }
+
+  .content__gallery {
+    display: grid;
+    max-width: calc(100vw - 48px);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

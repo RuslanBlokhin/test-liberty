@@ -41,8 +41,15 @@
   <div class="main___sorting-filter">
     <button type="button">
       <div class="main___sorting">
-        <p class="sorting__title">По возрастанию цены</p>
-        <img src="./images/down.svg" alt="arrow-bottom" />
+        <select name="select" class="main___sorting-filter__select">
+          <option value="value1">По умолчанию</option>
+          <option value="value2">По популярности</option>
+          <option value="value3" selected>По возрастанию цены</option>
+          <option value="value4">По убыванию</option>
+          <option value="value5">По новинкам</option>
+          <option value="value6">По скидке</option>
+          <option value="value7">По алфавиту</option>
+        </select>
       </div>
     </button>
     <button type="button" class="main___filter__button">
@@ -50,46 +57,87 @@
       <p class="filter__text">Фильтр</p>
     </button>
   </div>
-  <div class="main__content">
-    <div class="content__gallery">
-      <div class="content__gallery__item">
-        <img
-          src="./images/man1.png"
-          alt="man"
-          class="content__gallery__image"
-        />
-        @@include('content.html')
+  <div class="main__wrapper">
+    @@include('filter.html')
+    <div class="main__content">
+      <div class="content__gallery__wrapper320">
+        <div class="content__gallery__item">
+          <img
+            src="./images/man1.png"
+            alt="man"
+            class="content__gallery__image"
+          />
+          @@include('content.html')
+        </div>
+        <div class="content__gallery__item">
+          <img
+            src="./images/man2.png"
+            alt="man"
+            class="content__gallery__image"
+          />
+          @@include('content.html')
+        </div>
+        <div class="content__gallery__item">
+          <img
+            src="./images/man3.png"
+            alt="man"
+            class="content__gallery__image"
+          />
+          @@include('content.html')
+        </div>
       </div>
-      <div class="content__gallery__item">
-        <img
-          src="./images/man2.png"
-          alt="man"
-          class="content__gallery__image"
-        />
-        @@include('content.html')
+      <div class="content__gallery__wrapper1280">
+        <div class="content__gallery__item">
+          <img
+            src="./images/man-desc.png"
+            alt="man"
+            class="content__gallery__image"
+          />
+          @@include('content.html')
+        </div>
+        <div class="content__gallery__item">
+          <img
+            src="./images/man3-desc.png"
+            alt="man"
+            class="content__gallery__image"
+          />
+          @@include('content.html')
+        </div>
+        <div class="content__gallery__item">
+          <img
+            src="./images/man2-desc.png"
+            alt="man"
+            class="content__gallery__image"
+          />
+          @@include('content.html')
+        </div>
+        <div class="content__gallery__item">
+          <img
+            src="./images/women-desc.png"
+            alt="man"
+            class="content__gallery__image"
+          />
+          @@include('content.html')
+        </div>
+        @@include('content1280.html') @@include('content1280.html')
+        @@include('content1280.html') @@include('content1280.html')
       </div>
-      <div class="content__gallery__item">
-        <img
-          src="./images/man3.png"
-          alt="man"
-          class="content__gallery__image"
-        />
-        @@include('content.html')
+      <button type="button" class="button__showmore">Показать ещё</button>
+      <div class="content__gallery__pagination">
+        <button type="button" class="button__arrow">
+          <img src="./images/left.svg" alt="left" />
+        </button>
+        <button type="button" class="button__number is-active">1</button>
+        <button type="button" class="button__number">2</button>
+        <button type="button" class="button__number">3</button>
+        <button type="button" class="button__number grey-text" disabled>
+          4
+        </button>
+        <button type="button" class="button__number red-text">Все</button>
+        <button type="button" class="button__arrow button__arrow_right">
+          <img src="./images/right.svg" alt="right" />
+        </button>
       </div>
     </div>
-  </div>
-  <button type="button" class="button__showmore">Показать ещё</button>
-  <div class="content__gallery__pagination">
-    <button type="button" class="button__arrow">
-      <img src="./images/left.svg" alt="left" />
-    </button>
-    <button type="button" class="button__number is-active">1</button>
-    <button type="button" class="button__number">2</button>
-    <button type="button" class="button__number">3</button>
-    <button type="button" class="button__number grey-text" disabled>4</button>
-    <button type="button" class="button__number red-text">Все</button>
-    <button type="button" class="button__arrow button__arrow_right">
-      <img src="./images/right.svg" alt="right" />
-    </button>
   </div>
 </main>

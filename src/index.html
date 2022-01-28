@@ -10,8 +10,8 @@
   <body>
     @@include('parts/header.html')
     <div class="container">
-      @@include('parts/filter.html') @@include('parts/main.html')
-      @@include('parts/footer.html')
+      <div class="filter__wrapper">@@include('parts/filter.html')</div>
+      @@include('parts/main.html') @@include('parts/footer.html')
     </div>
 
     <script defer src="index.js" type="module"></script>

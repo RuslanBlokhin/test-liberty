@@ -8,7 +8,7 @@ buttonClose.addEventListener("click", toggleBackdrop);
 filterbackButton.addEventListener("click", toggleBackdrop);
 
 function toggleBackdrop() {
-  backdrop.classList.toggle("is-hidden");
+  backdrop.classList.toggle("is-open");
 }
 
 //===========Slider==============
