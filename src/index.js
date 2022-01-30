@@ -2,13 +2,31 @@ const buttonOpen = document.querySelector(".main___filter__button");
 const buttonClose = document.querySelector(".button__close");
 const filterbackButton = document.querySelector(".filter__back__button");
 const backdrop = document.querySelector(".backdrop");
+const backdropOptions = document.querySelector(".backdrop-options");
+// const buttonBuy = document.querySelector(".button__buy");
+const buttonCloseOptions = document.querySelector(".options__title__button");
+
+const refs = {
+  get getButtonBuy() {
+    return document.querySelector(".button__buy");
+  },
+};
 
 buttonOpen.addEventListener("click", toggleBackdrop);
 buttonClose.addEventListener("click", toggleBackdrop);
 filterbackButton.addEventListener("click", toggleBackdrop);
+refs.getButtonBuy.addEventListener("click", toggleBackdropOptions);
+console.log(refs.getButtonBuy);
+// // console.log(getButtonBuy());
+buttonCloseOptions.addEventListener("click", toggleBackdropOptions);
 
 function toggleBackdrop() {
   backdrop.classList.toggle("is-open");
+}
+
+function toggleBackdropOptions(e) {
+  console.log(e.target);
+  backdropOptions.classList.toggle("is-open");
 }
 
 //===========Slider==============
